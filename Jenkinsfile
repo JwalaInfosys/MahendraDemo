@@ -21,6 +21,15 @@ pipeline {
 
       }
     }
+    
+    stage('Jwala') {
+      steps {
+        retry(count: 1) {
+          echo 'Test'
+        }
+
+      }
+    }
 
   }
 }
